@@ -1,0 +1,39 @@
+.avatar {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.permission-checkbox {
+    word-break: break-word;
+    width: 90%;
+    vertical-align: top;
+}
+
+.sibling-text {
+    width: 75%;
+    vertical-align: top;
+}
+
+.sibling-text strong {
+    color: #3250e2;
+    font-weight: bold;
+}
+
+.form-check.controller-checkbox-style:first-child {
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 5%;
+}
+
+.parent-form-check {
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 5%;
+}
+
+#Admin {
+    margin-bottom: 2%;
+}
+

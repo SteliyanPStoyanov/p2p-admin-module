@@ -1,0 +1,2069 @@
+body {
+    font-family: 'Nunito Sans', Sans-serif !important;
+    font-size: 1rem;
+    color: #595959;
+}
+
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+body.pushable {
+    background-color: #fff !important;
+}
+
+.button {
+    letter-spacing: 0.5px;
+}
+
+.no-wrap {
+    white-space: nowrap !important;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    padding-right: 1px;
+    padding-left: 1px;
+}
+
+.bg-success {
+    background-color: transparent !important;
+    color: #009193 !important;
+}
+
+#header-container {
+    display: none;
+}
+
+#investTable.ui.table thead th {
+    padding: 1rem;
+    max-width: 1200px;
+}
+
+#investTable.ui.table.available-loans-table {
+    padding: 0;
+    max-width: 1200px;
+}
+
+#investTable .country-name-mobile, #myInvestmentsTable .country-name-mobile {
+    display: none;
+}
+
+.main-fixed {
+    background-color: #FFFFFF !important;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2) !important;
+    position: fixed !important;
+    -webkit-transition: all 0.3s !important;
+    -moz-transition: all 0.3s !important;
+    -ms-transition: all 0.3s !important;
+    -o-transition: all 0.3s !important;
+    transition: all 0.3s !important;
+    transition-property: all !important;
+    transition-duration: 0.3s !important;
+    transition-timing-function: ease !important;
+    transition-delay: 0s !important;
+}
+
+.main-fixed .top-header {
+    height: 3.5rem;
+}
+
+.main-fixed .top-header .logo-home img {
+    width: 50%;
+}
+
+.ui.large.top.fixed.main-fixed.menu {
+    border: none !important;
+}
+
+.main-menu-bootstrap {
+    position: relative;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    z-index: 4;
+
+}
+
+#myInvestmentsTable #table-myInvests tr td.center.aligned {
+    vertical-align: middle;
+    padding: .75rem !important;
+}
+
+#my-investments-container .filter-cards-style .card-body {
+    height: 100%;
+}
+
+#myInvestForm .form-row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.logo-svg {
+    width: 118px;
+    height: auto;
+}
+
+.container {
+    max-width: 1200px !important;
+    padding: 0;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.text-green {
+    color: #009193 !important;
+}
+
+.text-gray {
+    color: #595959 !important;
+}
+
+.text-alt-gray {
+    color: #7F7F7F !important;
+}
+
+
+.no-box {
+    box-shadow: none !important;
+}
+
+.no-border {
+    border: none !important;
+}
+
+.button-wide {
+    width: 100%;
+    max-width: 135px;
+}
+
+.ui.teal.button:hover {
+    background-color: #009c95;
+}
+
+.border-top-gray {
+    border-top: 1px solid rgba(0, 0, 0, .125);
+}
+
+input[type=text], input[type=email], input[type=password], input[type=date], input[type=number], .filters-container #myInvestForm input[type=number] {
+    padding: .67857143em 1em;
+    box-shadow: none !important;
+    background: #fff;
+    border: 1px solid rgba(34, 36, 38, .15);
+    color: rgba(0, 0, 0, .87);
+    border-radius: .28571429rem;
+}
+
+input[type=text]:focus, input[type=number]:focus, .filters-container #myInvestForm input[type=number]:focus {
+    background: #fafafa;
+    color: rgba(0, 0, 0, .87);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #000;
+    padding: 10px 15px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, .3);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    inset: 0;
+}
+
+input[type=text]:focus, input[type=number]:focus {
+    border: 1px solid #b8b8b8 !important;
+    inset: 0;
+}
+
+input[type=text]::placeholder, .filters-container #investForm input[type=number]::placeholder, .filters-container #myInvestForm input[type=number]::placeholder {
+    color: #cccccc;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: #cccccc;
+}
+
+/* Firefox < 19 */
+input:focus:-moz-placeholder {
+    color: #cccccc;
+}
+
+/* Firefox > 19 */
+input:focus::-moz-placeholder {
+    color: #cccccc;
+}
+
+/* Internet Explorer 10 */
+
+input:focus:-ms-input-placeholder {
+    color: #cccccc;
+}
+
+input:focus, label:focus, select:focus {
+    border: 1px solid #b8b8b8 !important;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;;
+    outline: none !important;
+    inset: 0;
+}
+
+input[type=number]::placeholder {
+    color: #cccccc;
+}
+
+.mb-4.w-100.float-left.pt-4:first-child {
+    padding-top: 0 !important;
+    border-top: none !important;
+}
+
+.navbar-bg {
+    background-color: #FF7E79 !important;
+    padding: 0 !important;;
+}
+
+.navbar-light.bg-light {
+    background-color: #ff7e79 !important;
+}
+
+.top-header {
+    height: 4.5rem;
+}
+
+.top-header .nav-link {
+    padding: .5rem 1.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    letter-spacing: 0.5px;
+    transition: 0.1s;
+    color: #fff;
+    font-size: 1rem;
+    padding: 5px;
+    margin: 5px 15px 5px 0;
+    font-weight: 400;
+    border-bottom: 1px solid #ff7e79;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    transition: 0.1s;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    transition: 0.1s;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.nav.justify-content-end > li > a {
+    color: #000;
+}
+
+.overview-card .card-header {
+    background: none;
+    font-size: 1.1rem;
+}
+
+.noHover:hover {
+    background: #ffffff;
+    color: #6c757d;
+    border-color: #6c757d;
+    cursor: progress;
+}
+
+.notAllowedHover:hover {
+    filter: opacity(20%);
+    cursor: not-allowed !important;
+}
+
+#my-profile-details .row.border-bottom {
+    border-bottom-color: #000 !important;
+}
+
+#my-profile-details .row .col-lg-8 {
+    text-align: left;
+    padding: 0;
+}
+
+#my-profile-details .row .edit-profile {
+    color: #000;
+}
+
+#loan-invest h1, #loan-invest h3, #loan-invest .col-lg-4, #loan-invest .col-lg-5, #loan-invest .col-lg-6, #loan-invest .col-lg-12 {
+    color: #000;
+}
+
+
+#loan-invest #table-invests .table thead th {
+    border: none !important;
+}
+
+#loan-invest #table-invests .table td {
+    border-top: 1px solid #e1e1e1 !important;
+}
+
+.copy-to-clipboard .bi.bi-clipboard {
+    fill: #D9D9D9;
+}
+
+.copy-to-clipboard .bi.bi-clipboard:hover {
+    fill: #525252;
+}
+
+.copy-to-clipboard.iscopy .bi.bi-clipboard {
+    fill: #525252;
+}
+
+#table-invests {
+    position: relative;
+}
+
+#table-invests .mobile-table-title, #myInvestmentsTable .mobile-table-title {
+    display: none;
+}
+
+#table-invests th .invest-all-button {
+
+}
+
+#table-invests th {
+    font-weight: 500;
+}
+
+.w100 {
+    width: 100% !important;
+}
+
+.filter-cards-style .card-header {
+    font-size: 1rem;
+}
+
+.check-box-w20 {
+    width: 20px;
+    height: 20px;
+    inset: auto !important;
+}
+
+#Legend ul {
+    padding-left: 0;
+    font-size: .8rem;
+}
+
+#Legend li {
+    list-style: none;
+    line-height: 30px;
+}
+
+.ucfirst {
+    text-transform: capitalize;
+}
+
+#Legend li > span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 100px;
+    float: left;
+    margin-top: 5px;
+}
+
+.invest-all-form {
+    width: 123px;
+    display: none;
+}
+
+.available-loans-container .minimalistic-table .invest-all-form .ui.button.invest-all-form-submit {
+    height: 33.5px;
+    width: 40% !important;
+    border-radius: 0 .38571429rem .38571429rem 0 !important;;
+}
+
+.rotate {
+    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.rotate.down {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.ui-state-active .fas {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#myTabContent .card {
+    border: none;
+}
+
+#myTabContent .accordion-title-select .fa {
+    margin-right: .3rem;
+}
+
+#myTabContent .card > .card-header {
+    background: none;
+    border: none;
+    padding: .25rem 0.5rem
+}
+
+#myTabContent .card > .card-header .btn-link {
+    color: #000;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: left;
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+}
+
+#myTab .nav-link {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+}
+
+#myTab .nav-link.active {
+    font-weight: 600;
+}
+
+#myTabContent .card-body {
+    color: #000;
+}
+
+#my-investments-container .ui.table thead th {
+    padding: .92857143em 1em;
+    user-select: none;
+}
+
+.features-container.available-loans-container {
+    width: 100%;
+    padding-top: 3rem !important;
+}
+
+.clearGroupFilter {
+    width: 50px;
+}
+
+.in-active-tr {
+    opacity: 0.4;
+}
+
+.sorting > input {
+    width: 1px;
+    height: 1px;
+    border: none;
+    position: absolute;
+    top: -10px;
+    left: -4px;
+    padding: 0;
+}
+
+th.sorting {
+    position: relative;
+    cursor: pointer !important;
+    overflow: hidden;
+}
+
+th.sorting > i.fa {
+    display: none;
+}
+
+th.sorting.active-sort i.fa {
+    display: inline-block;
+    position: absolute;
+    vertical-align: top;
+    font-size: 1.2rem;
+    right: 10%;
+    top: 40%
+}
+
+#createdFromDatepicker i, #createdToDatepicker i, #periodFromDatepicker i, #periodToDatepicker i {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+}
+
+.text-error {
+    color: #CB603B
+}
+
+.table-invest-link {
+    color: #0070C0 !important;
+}
+
+.invest-form {
+    width: 123px;
+    position: relative;
+    float: right;
+    margin: 0.5em auto;
+}
+
+form.invest-form > input {
+    width: 60% !important;
+    padding-left: .6rem;
+    float: left !important;
+    border-radius: .38571429rem 0 0 .38571429rem !important;
+    border-right: 0;
+}
+
+form.invest-all-form > input {
+    width: 60% !important;
+    padding-left: .6rem;
+    float: left !important;
+    border-radius: .38571429rem 0 0 .38571429rem !important;
+    border-right: 0;
+}
+
+form.invest-form > button.button {
+    width: 25% !important;
+    float: left !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding: 0.7em 0 !important;
+    border-radius: 0 .38571429rem .38571429rem 0 !important;
+}
+
+.close-form {
+    cursor: pointer;
+    position: absolute;
+    right: -20px;
+    left: auto !important;
+    top: 14px;
+}
+
+#account-summary .card {
+    border: 1px solid rgb(0 0 0 / 0.05);
+    border-radius: .38571429rem !important;
+}
+
+/* Tooltip text */
+.tooltip-success-form {
+    display: block;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: normal;
+    background-color: rgba(0, 0, 0, .9) !important;
+    line-break: auto;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    bottom: 45px;
+    left: 85%;
+    margin-left: -120px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    filter: alpha(opacity=90);
+    opacity: .9;
+}
+
+.tooltip-success-form:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 30%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: rgba(0, 0, 0, 1) transparent transparent transparent;
+}
+
+/* Tooltip text */
+.tooltip-error-form {
+    display: block;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: normal;
+    background-color: rgba(0, 0, 0, .9) !important;
+    line-break: auto;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    bottom: 45px;
+    left: 85%;
+    margin-left: -120px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    filter: alpha(opacity=90);
+    opacity: .9;
+}
+
+.tooltip-error-form:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 30%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: rgba(0, 0, 0, 1) transparent transparent transparent;
+}
+
+.form-control[readonly] {
+    background-color: #fff;
+}
+
+
+#footer-inverted a.item {
+    line-height: 2rem;
+}
+
+#footer-inverted {
+    background-color: #595959;
+    padding-bottom: 0;
+    margin-top: 10rem;
+}
+
+#footer-inverted .company-info, #footer-inverted .features-container p {
+    color: rgba(255, 255, 255, .5) !important;
+}
+
+#footer-inverted .features-container {
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+#footer-inverted .footer-anchor {
+    color: rgba(255, 255, 255, .5);
+}
+
+#footer-inverted .footer-anchor:hover {
+    color: #fff;
+}
+
+#footer-inverted .copyright-text {
+    border-top: 1px solid rgba(255, 255, 255, .1) !important;
+    padding-top: 1rem;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.minimalistic-table table.available-loans-table {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.pushable > .pusher {
+    position: inherit;
+    min-height: auto;
+}
+
+.pushable {
+    position: relative;
+}
+
+#footer-inverted {
+    display: block;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.pusher .content-container {
+    min-height: 55rem;
+}
+
+#footer-inverted {
+    max-height: 27.3rem;
+}
+
+.ui.basic.filters-toggle {
+    display: none;
+}
+
+#want-to-know-more {
+    margin-bottom: -2rem;
+}
+
+/*.available-loans-container .invest-all-button {*/
+/*    position: absolute;*/
+/*    right: 0;*/
+/*    top: 1.8vh;*/
+/*    width: 100%;*/
+/*    max-width: 123px;*/
+/*}*/
+
+
+.deposit-buttons {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.deposit-buttons .ui.button {
+    width: 100%;
+    max-width: 196px;
+}
+
+
+#my-profile-details > .row {
+    height: 100%;
+    max-height: 50px;
+    min-height: 50px;
+}
+
+#my-profile-details > .row .col-lg-4, #my-profile-details > .row .col-lg-8 {
+    align-self: center;
+}
+
+.cancel-profile {
+    position: absolute;
+    right: -52px;
+    top: -35px;
+}
+
+#my-profile-details .password-field {
+    max-height: none;
+    height: auto;
+    padding-top: 1rem;
+}
+
+#investsTable tr td .invest-form button.ui.teal.button {
+    max-height: 33.5px;
+    width: 40% !important;
+}
+
+#investTable .country-flag-circle {
+    margin-right: 0;
+}
+
+.no-inset input:focus, .no-inset label:focus, .no-inset select:focus {
+    inset: auto !important;
+}
+
+.custom-file label {
+    overflow: hidden;
+    line-height: 1.7;
+}
+
+#investsTable td.center.aligned {
+    vertical-align: middle;
+    white-space: nowrap;
+    padding: 0;
+}
+
+#investTable .invest-button-form {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+#maxRows {
+    min-width: 60px;
+}
+
+#account-summary .col-lg-9 {
+    max-width: 73.5%;
+    width: 100% !important;
+}
+
+.ui.basic.button.filters-active {
+    color: #009193 !important;
+    box-shadow: none;
+}
+
+#totalLoansCountView.filters-active {
+    color: #009193 !important;
+    box-shadow: none;
+}
+
+#editForm {
+    display: block;
+}
+
+.available-loans-container .btn-filter-submit:focus {
+    border: none !important;
+}
+
+#payment-schedule-table #table-invests {
+    max-height: 40vh;
+}
+
+.direction-in {
+    color: #FF7E79;
+    position: relative;
+    padding-left: 10px;
+}
+
+.direction-out {
+    color: #009193;
+    position: relative;
+    padding-left: 10px;
+}
+
+.direction-in:before {
+    content: '-';
+}
+
+.direction-out:before {
+    content: '+';
+}
+
+#table-myInvests .direction-in {
+    color: #FF7E79;
+    position: relative;
+    padding-left: 10px;
+}
+
+#table-myInvests .direction-out {
+
+    color: #009193;
+    position: relative;
+    padding-left: 10px;
+}
+
+#table-myInvests .direction-in:before {
+    content: '-';
+}
+
+#table-myInvests .direction-out:before {
+    content: '+';
+}
+
+#account-summary .filter-show-results {
+    font-size: 1rem;
+    letter-spacing: .2px;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    z-index: 9999;
+}
+
+header, .main-menu-bootstrap, .position-fixed.fixed-top, .content-container, .content {
+    -webkit-transition: all 0.9s ease;
+    transition: all 0.9s ease;
+    -webkit-transition: position .9s;
+    -moz-transition: position .9s;
+    -ms-transition: position .9s;
+    -o-transition: position .9s;
+    transition: position .9s;
+}
+
+canvas {
+    image-rendering: optimizeSpeed; /* Older versions of FF */
+    image-rendering: -moz-crisp-edges; /* FF 6.0+ */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non standard naming) */
+    image-rendering: -o-crisp-edges; /* OS X & Windows Opera (12.02+) */
+    image-rendering: crisp-edges; /* Possible future browsers. */
+    -ms-interpolation-mode: nearest-neighbor; /* IE (non standard naming) */
+}
+
+#account-summary .first-column-summary, #account-summary .first-column-chart-summary {
+    height: 100%;
+    max-height: 443px;
+}
+
+.bg-danger {
+    background-color: transparent !important;
+    color: #CB603B !important;
+    display: block;
+    width: 100% !important;
+    text-align: center;
+}
+
+.hide-verified h4 {
+    font-size: 1rem;
+}
+
+#pagination-nav nav {
+    display: inline-block;
+    width: auto;
+}
+
+#pagination-nav .investForm {
+    display: inline-block;
+    width: auto;
+    padding-top: .25rem;
+}
+
+#pagination-nav td {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
+#pagination-nav.invest-pagination .investForm, #pagination-nav.myinvest-pagination .investForm {
+    float: right;
+    width: auto;
+}
+
+#pagination-nav.invest-pagination nav {
+    display: inline-block;
+    width: 90%;
+}
+
+#pagination-nav.myinvest-pagination nav {
+    display: inline-block;
+    width: 89%;
+}
+
+.field-icon {
+    float: right;
+    margin-right: 2px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#table-myInvests #myInvestmentsTable tr td.center.aligned.loan-payment-status-width {
+    width: 90px !important;
+    padding: 0px !important;
+}
+
+#table-myInvests #myInvestmentsTable tr td.center.aligned.term-col {
+    min-width: 70px !important;
+    max-width: 70px !important;
+    padding: 0px !important;
+}
+
+#table-myInvests #myInvestmentsTable tr td.center.aligned.interest-rate {
+    min-width: 70px !important;
+    padding: 0px !important;
+}
+
+#table-myInvests #myInvestmentsTable tr td.center.aligned.loan-amount {
+    min-width: 95px !important;
+    padding: 0px !important;
+}
+
+#table-myInvests #myInvestmentsTable tr td.center.aligned.country {
+    width: 70px !important;
+    padding: 0px !important;
+}
+
+#cart-holder {
+    position: absolute;
+    background: #fff;
+    right: 0;
+    top: 40px;
+    padding: 0 40px;
+    border-radius: 0 0 .7rem .7rem;
+    box-shadow: 0 3px 9px 0 rgba(169, 184, 200, .3);
+    -webkit-box-shadow: 0 3px 9px 0 rgba(169, 184, 200, .3);
+    -moz-box-shadow: 0 3px 9px 0 rgba(169, 184, 200, .3);
+}
+
+#cart-count-total {
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    color: #000;
+    text-align: center;
+}
+
+#cart-count-total .cart-count {
+    padding-right: 7px;
+    border-right: 1px solid #000;
+    margin-right: 7px;
+    line-height: 1.1rem;
+    display: inline-block;
+}
+
+#cart-holder a {
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    color: #000;
+}
+
+#payment-schedule-table #investsTable {
+    height: 200px !important;
+
+}
+
+#payment-schedule-table #investTable {
+    border: none !important;
+}
+
+#payment-schedule-table #investTable thead th {
+    background: none !important;
+}
+
+/***************** buy *****************/
+
+
+.buy-info-box {
+    border-left: 5px solid rgb(31, 117, 203);
+    padding-left: 15px;
+}
+
+.buy-info-box .buy-number {
+    font-weight: bolder;
+}
+
+#exportBtn {
+    max-width: 284px;
+    position: relative;
+    padding: 0.9em 1em 0.7em 0px;
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1199.97px) {
+    .title-loans, .livewire-update {
+        display: inline-block;
+        text-align: left;
+        margin-right: .5rem !important;
+    }
+
+    #payment-schedule-table #investTable .mobile-table-content {
+        padding: 10px 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.97px) {
+
+    .container {
+        max-width: 95% !important;
+    }
+
+    #my-profile-details .btn.ui.teal.button.w-25 {
+        width: 40% !important;
+    }
+
+    #account-summary .col-lg-3.mt-4 {
+        flex: 0 0 32.666667% !important;
+        max-width: 32.666667% !important;
+    }
+
+    #account-summary .col-lg-9.mt-4 {
+        flex: 0 0 66.666667% !important;
+        max-width: 66.666667% !important;
+    }
+
+
+    #my-investments-container #myInvestForm .col-lg-3.pl-3, #my-investments-container #myInvestForm .col-lg-6.pl-3 {
+        padding-left: 0 !important;
+    }
+
+    #myInvestmentsTable #pagination-nav .investForm {
+        top: auto !important;
+        bottom: 120px;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .refer-a-friend-text-container .ui.huge.header {
+        font-size: 2rem !important;
+    }
+
+    #how-does-it-work-container .six.wide.column.middle.aligned {
+        width: 47.5% !important;
+    }
+
+    .pusher #want-to-know-more .grid.container {
+        width: 75% !important;
+    }
+
+    .refer-a-friend-text-container {
+        margin-top: 0 !important;
+
+    }
+
+    .invest-all-form {
+        margin-right: 1.6vw;
+        top: 17px;
+    }
+
+    #investsTable .single-invest-button {
+        display: flex;
+        margin: 0.6em 0 !important;
+    }
+
+    #my-investments-container #myInvestForm .col-lg-3.pl-3, #my-investments-container #myInvestForm .col-lg-6.pl-3 {
+        padding-left: 1rem !important;
+    }
+
+    .row.withdraw-row .col-lg-4 {
+        max-width: 400px !important;
+        width: 100% !important;
+        flex: 0 0 100%;
+    }
+
+    .available-loans-container .collapsing {
+        position: relative;
+        height: unset !important;
+        overflow: hidden;
+    }
+
+    #table-invests {
+        width: 103%;
+        max-width: 103% !important;
+        margin-left: -.75rem;
+    }
+
+    #investTable.ui.table.available-loans-table {
+        max-width: 99% !important;
+    }
+
+    #investTable.ui.table thead th {
+        padding: .5rem !important;
+        max-width: 99% !important;
+        font-size: .9rem;
+    }
+
+    #investsTable td.center.aligned {
+        padding: .5rem !important;
+        white-space: normal;
+        font-size: .85rem;
+    }
+
+    #account-summary .first-column-summary, #account-summary .first-column-chart-summary {
+        height: 443px;
+    }
+
+    #account-summary .filter-show-results {
+        font-size: 1rem;
+        letter-spacing: .2px;
+        position: absolute;
+        right: 3%;
+        top: 3%;
+        z-index: 9999;
+    }
+
+    .available-loans-container .button {
+        padding: 0.6em .9em;
+    }
+
+    .close-form .fa.fa-times {
+        font-size: 1rem;
+    }
+
+    .available-loans-container .invest-all-button {
+        right: 0;
+        margin-right: 1.6vw;
+        top: 17px;
+    }
+
+    .close-form {
+        right: -20px !important;
+        top: 12px !important;
+    }
+
+    .main-menu-bootstrap .top-header .col-lg-10 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+
+    .col-lg {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%
+    }
+
+    .col-lg-auto {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%
+    }
+
+    .col-lg-1 {
+        -ms-flex: 0 0 8.333333%;
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%
+    }
+
+    .col-lg-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%
+    }
+
+    .col-lg-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%
+    }
+
+    .col-lg-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%
+    }
+
+    .col-lg-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%
+    }
+
+    .col-lg-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%
+    }
+
+    .col-lg-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%
+    }
+
+    .col-lg-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%
+    }
+
+    .col-lg-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%
+    }
+
+    .col-lg-10 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%
+    }
+
+    .col-lg-11 {
+        -ms-flex: 0 0 91.666667%;
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%
+    }
+
+    .col-lg-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+
+    #account-summary .card-body {
+        padding: 0;
+    }
+
+    #account-summary .card.shadow-sm {
+        height: 443px;
+    }
+
+    #account-summary .card.mb-4.shadow-sm.first-column-summary, #account-summary .card.mb-4.shadow-sm.first-column-chart-summary {
+        margin-bottom: .5rem !important;
+    }
+
+    .available-loans-container .overview-card .card-header {
+        white-space: nowrap;
+    }
+
+    .available-loans-container .col-lg-3.mt-3 .card-body {
+        padding: 0 !important;
+    }
+
+    #investForm .col-lg-6.pl-3.mt-3 {
+        padding-left: 1rem !important;
+    }
+
+    .country-flag-circle {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    #payment-schedule-table #investTable .mobile-table-content {
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+
+    .hide-on-tablet {
+        display: none !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 767.98px) {
+
+    #investsTable .mobile-table-content .country-flag-circle, #myInvestmentsTable .mobile-table-content .country-flag-circle {
+        width: 16px !important;
+        height: 16px !important;
+        vertical-align: top;
+        margin-right: 5px !important;
+        margin-top: 1px !important;
+    }
+
+    #account-summary .first-column-summary, #account-summary .first-column-chart-summary {
+        height: auto;
+        max-height: none;
+    }
+
+
+    .bg-danger {
+        display: block;
+        width: 100% !important;
+        text-align: center;
+    }
+
+
+    .close-form {
+        left: -27px !important;
+        right: auto !important;
+    }
+
+    #myInvestmentsTable #table-myInvests tr td.center.aligned {
+        white-space: nowrap;
+        padding: 0 !important;
+    }
+
+    .filters-container #myInvestForm input[type=number] {
+        box-shadow: none !important;
+    }
+
+    .container.content-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #filtered-results {
+        position: initial;
+    }
+
+    #table-myInvests {
+        border-top: none;
+    }
+
+    #investTable .invest-button-form {
+        margin-right: auto;
+    }
+
+    .portfolio-dashboard {
+        margin-left: 0 !important;
+    }
+
+    .withdraw-text .col-lg-2 {
+        width: 20%;
+    }
+
+    .withdraw-text .col-lg-10 {
+        width: 80%;
+    }
+
+    #investsTable {
+        margin-top: 5rem;
+    }
+
+
+    #investTable thead {
+        display: none;
+    }
+
+    #investTable .country-name-mobile {
+        display: inline-block;
+    }
+
+    #investTable .country-flag-circle {
+        margin-right: .5rem;
+    }
+
+    .invest-all-form {
+        z-index: 9999;
+        position: absolute;
+        right: 0;
+        top: 0;
+        max-width: 144px;
+        width: 100%;
+        margin-top: .1rem;
+    }
+
+    .inside-table-mobile .mobile-homepage-btn-invest {
+        text-align: center;
+        border-bottom: 1px solid #e8e8e8 !important;
+        margin: 0 0 1rem 0 !important;
+        padding: .5rem 0 1rem 0 !important;
+    }
+
+    .half-width {
+        padding-top: 0 !important;
+    }
+
+    .ui.table:not(.unstackable) tr {
+        box-shadow: none !important;
+    }
+
+    .hide-on-mobile {
+        display: none !important;
+    }
+
+    #investsTable tr, #myInvestmentsTable tr {
+        width: 100% !important;
+    }
+
+    #investTable.ui.table.available-loans-table {
+        max-width: none;
+        table-layout: fixed;
+    }
+
+    #investsTable tr td, #myInvestmentsTable tr td {
+        margin-bottom: .5rem !important;
+    }
+
+    #investsTable td:first-child, #myInvestmentsTable td:first-child {
+        font-weight: 400;
+    }
+
+    #investsTable .mobile-table-title, #myInvestmentsTable .mobile-table-title {
+        display: inline-block;
+        text-align: left;
+        width: 55%;
+        font-weight: bold;
+    }
+
+    #investsTable .mobile-table-content, #myInvestmentsTable .mobile-table-content {
+        display: inline-block;
+        width: 45%;
+        text-align: right;
+    }
+
+    #myInvestmentsTable.ui.table thead {
+        display: none;
+    }
+
+    #myInvestmentsTable #table-myInvests {
+        margin-top: 2.5rem;
+        max-width: 90.5vw;
+    }
+
+    #myInvestmentsTable #table-myInvests tr {
+        margin-bottom: 2.5rem;
+    }
+
+    #myInvestmentsTable #table-myInvests .country-name-mobile {
+        display: inline-block;
+    }
+
+    #my-investments-container #myInvestForm .col-lg-3.pl-3, #my-investments-container #myInvestForm .col-lg-6.pl-3 {
+        padding-left: 0 !important;
+    }
+
+    #my-investments-container #myInvestForm {
+        max-width: 97%;
+        margin: 0 auto;
+    }
+
+    #loan-invest .col-lg-4 .row {
+        padding: .35rem 0 !important;
+    }
+
+    #loan-invest .col-lg-4.mt-5.ml-auto .card.pl-2.pr-2 .card-body.row {
+        padding: .75rem !important;
+    }
+
+    #loan-invest .col-lg-4 .row .col-lg-6 {
+        width: 45%;
+    }
+
+    #loan-invest .col-lg-4 .row {
+        padding: .75rem .75rem .75rem 0 !important;
+    }
+
+    #loan-invest .col-lg-4 .row .col-lg-6:last-of-type {
+        margin-left: auto;
+        text-align: left;
+    }
+
+    #loan-invest #payment-schedule-table #table-invests .table td {
+        padding: 0.35rem !important;
+        font-size: .9rem;
+        vertical-align: middle;
+        text-align: center;
+        border: none !important;
+        margin-bottom: 0 !important;
+    }
+
+    #payment-schedule-table #investTable {
+        border: none;
+    }
+
+    #payment-schedule-table #investsTable {
+        margin-top: 0 !important;
+    }
+
+    #loan-invest #payment-schedule-table #table-invests .table thead th {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    #my-profile-details > .row {
+        height: 100%;
+        max-height: 65px;
+    }
+
+    #my-profile-details > .row:last-of-type {
+        max-height: unset;
+        height: auto;
+    }
+
+    #my-profile-details .password-field {
+        max-height: none;
+        height: auto;
+        padding-top: 1rem;
+    }
+
+    #account-summary .col-lg-9 {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    #account-summary .col-lg-9 .card-body {
+        padding: 0;
+    }
+
+    #account-summary .filter-show-results {
+        font-size: 1rem;
+        letter-spacing: .2px;
+        position: absolute;
+        right: 15px;
+        top: 16px;
+        z-index: 9999;
+    }
+
+    #account-summary h2.text-left {
+        margin: 1rem auto 0 auto !important;
+        text-align: center !important;
+    }
+
+    #account-summary .col-lg-3.mt-4 .card-body.p-3 .card-body {
+        padding: 0 !important;
+    }
+
+    #earnedIncomeChart {
+        image-rendering: optimizeSpeed; /* Older versions of FF */
+        image-rendering: -moz-crisp-edges; /* FF 6.0+ */
+        image-rendering: -webkit-optimize-contrast; /* Webkit (non standard naming) */
+        image-rendering: -o-crisp-edges; /* OS X & Windows Opera (12.02+) */
+        image-rendering: crisp-edges; /* Possible future browsers. */
+        -ms-interpolation-mode: nearest-neighbor; /* IE (non standard naming) */
+    }
+
+    canvas {
+        box-sizing: initial;
+    }
+
+    /*.available-loans-container .loans-table-mobile.inside-table-mobile .mobile-table-body tr {*/
+    /*    box-shadow: none !important;*/
+    /*}*/
+    .main-menu-bootstrap, .main-fixed {
+        display: none !important;
+    }
+
+    .withdraw-row .col-lg-6 {
+        width: 45%;
+    }
+
+    #header-container {
+        display: block;
+    }
+
+    .ui.left.sidebar {
+        width: 50%;
+    }
+
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
+        display: none;
+    }
+
+    #nav-container .secondary-menu-container {
+        height: 100%;
+    }
+
+    .secondary.pointing.menu .toc.item {
+        display: block;
+    }
+
+    .amount-invest-input {
+        width: 100% !important;
+        font-size: .7rem;
+        height: 38px;
+    }
+
+    .invest-form {
+        width: 100%;
+        padding: 0;
+        display: block;
+    }
+
+    header {
+        display: none;
+    }
+
+    #nav-container {
+        margin: 0 !important;
+        padding: 0 !important;
+        background-color: #fff;
+    }
+
+    html, body {
+        background-color: #fff;
+    }
+
+    .ui.fixed.menu {
+        display: none !important;
+    }
+
+    .ui.left.sidebar {
+        width: 50%;
+    }
+
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
+        display: none;
+    }
+
+    .secondary.pointing.menu .toc.item {
+        display: block;
+    }
+
+    .masthead.segment {
+        min-height: 350px;
+    }
+
+    .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+    }
+
+    .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+    }
+
+    .masthead .ui.menu .ui.button {
+        margin-right: 0.5em;
+    }
+
+    #investForm .col-lg-3, #investForm .col-lg-6 {
+        padding-left: 0 !important;
+    }
+
+    .available-loans-container .col-lg-6 .card-body {
+        padding: 0 .5rem !important;
+    }
+
+
+    .available-loans-container .col-lg-12 {
+        margin-top: 3rem;
+    }
+
+    .pusher .features-container.available-loans-container {
+        padding-top: 1rem !important;
+    }
+
+    #top-header .right {
+        padding: 0;
+        position: absolute;
+        right: 3.5% !important;
+        top: 7%;
+    }
+
+    #top-header .logo-home img {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    #top-header .logo-home {
+        margin: 0 auto;
+        height: 50px;
+    }
+
+    #header-container {
+        position: relative;
+    }
+
+    #nav-container {
+        width: 10% !important;
+        float: right;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        height: 100%;
+        margin-top: -0.5rem;
+    }
+
+    #nav-container .secondary-menu-container a.toc {
+        color: #ff7e79;
+        padding: 0 0 0 40%;
+    }
+
+    #nav-container .secondary-menu-container a {
+        font-size: 2rem;
+    }
+
+    #header-container {
+        min-height: auto;
+    }
+
+    .pusher .features-container {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+
+    .ui.menu .item > i.icon {
+        font-size: 1.5rem;
+    }
+
+    .ui.sidebar.menu .item.sidemenu-bonus {
+        background-color: #009193 !important;
+        color: #fff !important;
+        text-shadow: none;
+        text-align: center;
+        width: 100%;
+        max-width: 9.5rem;
+        border-radius: 0.28rem !important;
+        margin: 1rem 0 1rem 1rem;
+    }
+
+    .ui.sidebar.menu .item.sidemenu-logout {
+        background: transparent none !important;
+        color: rgba(0, 0, 0, .6) !important;
+        border-radius: .28571429rem !important;
+        text-shadow: none !important;
+        -webkit-box-shadow: 0 0 0 1px rgba(34, 36, 38, .15) inset;
+        box-shadow: 0 0 0 1px rgba(34, 36, 38, .15) inset;
+        text-align: center;
+        width: 100%;
+        max-width: 9.5rem;
+        margin: 1rem 0 1rem 1rem;
+    }
+
+    .logo-svg {
+        width: 25%;
+        height: 100%;
+    }
+
+    #investForm .form-row.overview-card {
+        margin-top: 2rem !important;
+    }
+
+    #investForm {
+        z-index: 999;
+    }
+
+    .logo-sidebar {
+        margin: .92857143em 1.14285714em;
+    }
+
+    #top-header .ui.secondary .logo-home a {
+        color: #595959;
+    }
+
+    #editForm .trans-details .row .col-lg-8 .row .col-lg-10 {
+        width: 70%;
+    }
+
+    #editForm .trans-details .row .col-lg-8 .row .col-lg-10 .text-field {
+        font-weight: 500;
+        color: #595959;
+    }
+
+    #editForm .trans-details .row .col-lg-8 .row .col-lg-1 {
+        text-align: right !important;
+        position: absolute;
+        right: 0;
+        bottom: 45%;
+        width: 7%;
+    }
+
+    #editForm input:focus, label:focus, select:focus {
+        inset: auto !important;
+    }
+
+    #editForm .font-weight-light {
+        font-size: .9rem;
+    }
+
+    #editForm #form_submit {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 50% !important;
+    }
+
+    .invest-form {
+        width: 147px;
+        position: relative;
+        margin-bottom: 1.95rem;
+        padding-bottom: 3rem;
+        padding-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #investsTable .center.aligned.no-border.no-box .invest-form input.amount-invest-input {
+        margin-top: .5em;
+        max-height: 28px;
+    }
+
+    form.invest-form > input {
+        width: 60% !important;
+        float: left !important;
+        border-radius: .38571429rem 0 0 .38571429rem !important;
+    }
+
+    form.invest-form > button.button {
+        height: 33.5px;
+        width: 35% !important;
+    }
+
+    form.invest-form button.euro-sign .fa {
+        font-size: 1rem;
+    }
+
+    form.invest-form .close-form {
+        top: 20px !important;
+    }
+
+    #investsTable .invest-form {
+        padding-right: 0.1rem;
+        float: none;
+    }
+
+    form.invest-form .tooltip-error-form, form.invest-form .tooltip-success-form, .invest-all-form .tooltip-error-form, .invest-all-form .tooltip-success-form {
+        bottom: 90%;
+        width: auto;
+    }
+
+    .ui.basic.filters-toggle {
+        display: block;
+        width: 40% !important;
+        float: left;
+    }
+
+    .available-loans-container .invest-all-button {
+        float: right;
+    }
+
+    #filters-collapse {
+        float: left;
+        width: 100%;
+    }
+
+    #investForm.filter-cards-style .form-row .col-lg-3, #investForm.filter-cards-style .form-row .col-lg-6 {
+        padding-right: 0 !important;
+    }
+
+    .available-loans-container .invest-all-button {
+        position: absolute;
+        right: 0;
+        top: auto;
+        max-width: 144px;
+        margin-top: 0.6rem !important;
+        width: 100%;
+    }
+
+    #table-invests .invest-all-button {
+        z-index: 9999;
+    }
+
+    .logo-svg-sidebar {
+        max-width: 118px !important;
+        padding-right: 1rem;
+        margin-left: -1%;
+        padding-left: 0 !important;
+    }
+
+    .pusher .available-loans-container .collapsed {
+        box-shadow: none !important;
+    }
+
+    #footer-inverted {
+        max-height: none;
+    }
+
+    #footer-inverted .three.wide.column {
+        width: 50% !important;
+    }
+
+    #footer-inverted .wide.column, p.copyright-text {
+        font-size: .9rem;
+    }
+
+    #loan-invest #myChart {
+        height: auto !important;
+        width: 75% !important;
+        margin: 0 auto;
+    }
+
+    .first-column-chart-summary .col-lg-6 .chart:nth-child(1) {
+        margin-bottom: 5rem;
+    }
+
+    #payment-schedule-table #table-invests {
+        height: auto;
+        max-height: none;
+        overflow-y: visible;
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    #payment-schedule-table .table-fixed thead, #payment-schedule-table .table-fixed tbody, #payment-schedule-table .table-fixed tr, #payment-schedule-table .table-fixed td, #payment-schedule-table .table-fixed th {
+        display: block;
+    }
+
+    #loan-invest #Legend {
+        font-size: .85rem;
+    }
+
+    #loan-invest .col-lg-7 .table-responsive {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    #my-profile-details .row .col-lg-10 {
+        width: 90% !important;
+    }
+
+    #my-profile-details .row .col-lg-10 .input-field .col-lg-12 {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: .5rem;
+    }
+
+    .cancel-profile {
+        position: absolute;
+        right: -55px;
+        top: -34px;
+    }
+
+    #myInvestForm .pr-3, #myInvestForm .pr-1 {
+        padding-right: 0 !important;
+    }
+
+    #loan-invest h1 {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    #loan-invest h3 {
+        font-size: 1.1rem;
+        padding-bottom: 1rem;
+        text-align: left;
+    }
+
+    #loan-invest h4 {
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    #loan-invest .col-lg-4 .row.pb-2.pt-3 {
+        padding-top: .3rem !important;
+        padding-bottom: .3rem !important;
+    }
+
+    #loan-invest .col-lg-4 .row.pb-2.pt-3 .col-lg-6 {
+        width: 50%;
+    }
+
+    #loan-invest .col-lg-4:nth-of-type(2) {
+        margin-top: 2rem !important;
+    }
+
+    #loan-invest .col-lg-4:nth-of-type(3) {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    #loan-invest .col-lg-4 .row.pb-2.pt-3 .col-lg-6:first-of-type {
+        font-weight: bold;
+    }
+
+    #loan-invest .col-lg-4 .row.pb-2.pt-3 .col-lg-6:last-of-type {
+        text-align: right;
+    }
+
+    #investsTable .invest-button-form {
+        width: 100%;
+        max-width: 144px;
+        border-bottom: 1px solid #e8e8e8;
+        text-align: center;
+        border-bottom: 1px solid #e8e8e8;
+        margin-top: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .deposit-btn, .withdraw-btn {
+        width: 48% !important;
+    }
+
+    .deposit-btn {
+        margin-right: .5rem;
+    }
+
+    .withdraw-btn {
+        margin-right: 0 !important;
+        float: right;
+    }
+
+    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #myInvestmentsTable #table-myInvests tr td.center.aligned.loan-payment-status-width,
+    #myInvestmentsTable #table-myInvests tr td.center.aligned.term-col,
+    #myInvestmentsTable #table-myInvests tr td.center.aligned.interest-rate,
+    #myInvestmentsTable #table-myInvests tr td.center.aligned.loan-amount,
+    #myInvestmentsTable #table-myInvests tr td.center.aligned.country {
+        width: auto !important;
+        padding: 0px !important;
+    }
+
+    #payment-schedule-table #investsTable {
+        height: auto !important;
+    }
+
+    #exportBtn {
+        max-width: 100%;
+        text-align: right;
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    #transactionData #exportBtn {
+        text-align: left;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 415.98px) {
+
+}

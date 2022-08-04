@@ -1,0 +1,51 @@
+html, .table {
+    font-size: 0.9rem !important;
+}
+
+.sidebar-nav #sidebarnav .sidebar-item .sidebar-link {
+    font-size: 1rem !important;
+
+}
+
+.admin-dashboard .card {
+    min-width: 350px;
+    margin-bottom: 20px;
+}
+
+.admin-dashboard-sistem-info .row {
+    height: 100%;
+    max-height: 50px;
+    min-height: 50px;
+    color: #000000;
+
+}
+
+.admin-dashboard-sistem-info .row > div {
+    align-self: center;
+}
+
+.admin-dashboard-sistem-info .row .col-lg-7,
+.admin-dashboard-sistem-info .row .col-lg-5 {
+    padding-left: 0px;
+}
+
+@media screen and (min-width: 1300px) {
+    .investment-col-investment_created_at {
+        width: 100px;
+    }
+
+}
+
+
+@media screen and (min-width: 541px) {
+    .admin-dashboard-sistem-info > div {
+        min-width: 540px;
+    }
+}
+
+@media screen and (max-width: 541px) {
+    .charts-container .card .card-body {
+        padding: 15px !important;
+    }
+
+}

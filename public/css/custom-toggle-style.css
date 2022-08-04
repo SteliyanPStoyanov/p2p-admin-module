@@ -1,0 +1,67 @@
+.toggle .btn-default {
+    display: none;
+}
+
+.toggle.btn.btn-sm.quick.btn-info {
+    border: none;
+    background: none;
+}
+
+.btn.btn-info.btn-sm.toggle-on {
+    background: #3250e2;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    height: 38px;
+    border-radius: 3px;
+}
+
+.btn.btn-info.btn-sm.toggle-off {
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1rem;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    height: 38px;
+    border-radius: 3px;
+}
+
+.toggle, .toggle-on, .toggle-off {
+    cursor: pointer;
+}
+
+#toggle-address-container .toggle.btn-sm {
+    width: 40% !important;
+    float: right;
+    height: 38px !important;
+}
+
+#toggle-phone-additional-container .toggle.btn-sm {
+    width: 15% !important;
+    float: right;
+    height: 38px !important;
+}
+
+#toggle-phone-additional, .phoneAdditionalDelete {
+    float: right;
+    line-height: 24px;
+    width: 20%;
+}
+
+.quick .toggle-group {
+    transition: none;
+    -webkit-transition: none;
+}
+
+.toggle.btn {
+
+}
+
+.toggle-on.btn {
+    padding-right: 12px;
+}
+
+.toggle-off.btn {
+    padding-left: 12px;
+}

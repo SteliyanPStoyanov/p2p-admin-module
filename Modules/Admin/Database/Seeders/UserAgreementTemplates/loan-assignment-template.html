@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>ASSIGNMENT AGREEMENT</title>
+    <style>
+        .page-break {
+            page-break-after: always;
+        }
+        body {
+            width: 80%;
+            margin: auto;
+            font-family: Arial,serif;
+            font-size: 10px;
+        }
+
+        body {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        body div, p {
+            margin: 0 0 0 0;
+        }
+
+        body table {
+            border-collapse: collapse;
+        }
+
+        body table tr td {
+            border: 1px black solid;
+        }
+
+        body .clearfix:after {
+            content: "";
+            visibility: hidden;
+            display: block;
+            height: 0;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+        <div>{LoanContract.created_at}</div>
+        <div>Assignment Agreement No. {Loan.loan_id} - {Investor.investor_id} - {Transaction.created_at} - {Transaction.transaction_id}</div>
+        <p>Version: {ContractTemplate.version}</p>
+        <p>Date of version: {ContractTemplate.created_at}</p>
+        <div style="text-align: center;">
+            <p><strong>{Originator.name} Assignment Agreement</strong></p>
+            <p><strong>Section I - Basic Terms and Conditions</strong></p>
+        </div>
+        <br>
+        <div>
+            <ol>
+                <li>The Assignor: {Originator.name} company organized and existing under the laws of {Originator.country.name}, registration number: {Originator.pin}.</li>
+                <li>The Assignee’s Portal-ID number: {Investor.investor_id}</li>
+                <li>Loan ID designated by the Platform: {Loan.loan_id}</li>
+                <li>Claim price: {Investment.amount} EUR</li>
+                <li>Currency: EUR</li>
+                <li>Interest rate: {Loan.interest_rate_percent} % per annum</li>
+                <li>Late payment interest rate: {Loan.interest_rate_percent} % per annum</li>
+                <li>The amount of the Claim to be assigned: EUR</li>
+                <li>Repayment date of the Loan:  {Loan.final_payment_date} </li>
+                <li>Buyback obligation: {Buyback}</li>
+            </ol>
+        </div>
+
+        <div style="text-align: center;">
+            <p><strong>Section II - Assignment Agreement General Terms and Conditions</strong></p>
+        </div>
+        <br>
+        <div class="table" class="border">
+            <p><strong>1. Definitions</strong></p>
+            <br>
+            <table class="versionTable">
+                <tr>
+                    <td><strong>Afranga</strong></td>
+                    <td>
+                        Afranga, a P2P marketplace platform operated and maintained by Stik
+                        Credit JSC, a financial institution registered with the Bulgarian National
+                        Bank according to order BNB-61932 from 07.07.2016, under number
+                        BGR00370 and company number 202557159.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Afranga Account</strong></td>
+                    <td>
+                        the User’s personal account on Afranga’s Platform, which allows
+                        entering into Assignment Agreements after Afranga has conducted
+                        KYC checks of the User and records settlements, transactions, funds
+                        available and other relevant data.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Afranga Bank Account/-s</strong></td>
+                    <td>
+                        a bank account of Stik Credit JSC, indicated on the Platform and
+                        opened solely for the purposes of servicing the Users of the Afranga
+                        platform and keeping funds received from the Users separate from the
+                        other property of Stik Credit JSC. Pursuant to the present Terms and
+                        Conditions, the User transfers funds to add them to the User’s Afranga
+                        Account.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Afranga Auto Invest</strong></td>
+                    <td>
+                        a non-mandatory functionality enabling automated sales and
+                        purchases of Claims available for the User.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Agreement</strong></td>
+                    <td>
+                        an agreement of a user of Afranga’s Platform concluded between the
+                        User and Afranga.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Assignee</strong></td>
+                    <td>
+                        a User or Afranga, who has purchased a Claim under an Assignment
+                        Agreement.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Assignment Agreement</strong></td>
+                    <td>
+                        an assignment agreement concluded between the Creditor in his
+                        capacity of Assignor and the User in his capacity of Assignee or the
+                        Assignee as the Assignor and another party (another User or Afranga)
+                        as Assignee, and pursuant to which the Creditor (the Assignor)
+                        transfers a Claim arising from the Loan Agreement to the User (the
+                        Assignee).
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Assignor</strong></td>
+                    <td>
+                        a Creditor (Loan Originator or User), who, in line with the Assignment
+                        Agreement, assigns the Claim to another User.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Application for
+                        registration or
+                        Registration Application</strong></td>
+                    <td>
+                        an application prepared by the User on the Platform in compliance with
+                        Section 2 of the Terms and Conditions for the registration on the
+                        Platform and for the use of the offered services in compliance with the
+                        Terms and Conditions.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Borrower</strong></td>
+                    <td>
+                        an individual or a legal entity with whom the Loan Originator has
+                        entered into the Loan Agreement.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Borrower's Payments</strong></td>
+                    <td>
+                        a payment made by the Borrower for: loan repayment, interest
+                        repayment, contractual penalty, late payment interest, and/or other
+                        ancillary claims arising from the Loan Agreement.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Claim</strong></td>
+                    <td>
+                        a Creditor’s claim or a part of a Creditor’s claim against the Borrower,
+                        arising from the Loan Agreement.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Claim Amount</strong></td>
+                    <td>
+                        Loan or a part of a Loan, to the extent whereof the Assignor transfers a
+                        Claim to the Assignee and which, together with a mark-up or discount
+                        (if any) forms the Claim Price.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Claim Application</strong></td>
+                    <td>
+                        a User’s application filled on Afranga’s Platform for the purchase of a
+                        Claim or part of a Claim.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Claim Price</strong></td>
+                    <td>
+                        the price for the Claim transfer agreed upon between the Assignor and
+                        User and established in the Assignment Agreement, consisting of the
+                        Claim Amount and the discount or mark-up (if any).
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Creditor</strong></td>
+                    <td>
+                        the Loan Originator or User, who owns a Claim towards a Borrower.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Loan</strong></td>
+                    <td>
+                        the principal amount of the loan, or a part of it, which in line with the
+                        Assignment Agreement shall be repaid by the Borrower to the Loan
+                        Originator, and which is subsequently transferred to the Assignee after
+                        it is received from the Loan Originator.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Loan Originator</strong></td>
+                    <td>
+                        a lending company which is the Creditor, who, in line with the
+                        agreement concluded between the Creditor and Afranga, has
+                        authorized Afranga to transfer the Loan Originator’s Claims towards
+                        the Borrower, by using the Platform, and on behalf of the Creditor, to
+                        take other steps prescribed in the Agreement and in the Assignment
+                        Agreement.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Loan Agreement</strong></td>
+                    <td>
+                        a loan, lease, credit agreement or any other financial agreement
+                        concluded between the Loan Originator and the Borrower.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Interest</strong></td>
+                    <td>
+                        the remuneration for the use of the Loan, which is calculated according
+                        to the terms of the Loan Agreement.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Minimum Claim Amount</strong></td>
+                    <td>
+                        the minimum amount of a single Claim as detailed by Afranga and
+                        indicated on the Platform, excluding any mark-ups or discounts, for
+                        which a User can purchase a single Claim. The amount of the Claim,
+                        along with mark-ups and discounts (if any) form the Claim Price. The
+                        Minimum Claim Amount is not constant for all Claims and it may differ
+                        for different Claims.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Privacy and cookie Policy</strong></td>
+                    <td>
+                        the Privacy and cookie policy of Stik Credit JSC, available on Afranga’s
+                        platform.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Management of Claim or
+                        Servicing of the Claim</strong></td>
+                    <td>
+                        the actions that the Loan Originator, Afranga or other party are allowed
+                        to conduct, according to the Assignment Agreement or other
+                        agreement concluded with the Assignee, as the fiduciary of the
+                        Assignee with respect to the Claim.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Summary</strong></td>
+                    <td>
+                        a summary automatically created on the Platform regarding the User’s
+                        selected Claims and the indicated sums, for which the User has
+                        chosen to purchase Claims.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Terms and Conditions</strong></td>
+                    <td>
+                        the present Afranga User Agreement, General Terms and Conditions
+                        which are applicable to all of the User’s agreements and transactions
+                        conducted via the Platform.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Platform-ID Number</strong></td>
+                    <td>
+                        a personalized number of the User on the Platform, used by Afranga to
+                        identify the User. The Platform-ID Number is also used when User
+                        transfers funds to add them to his Afranga Account.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>User</strong></td>
+                    <td>
+                        a natural person registered on the Platform as its user in capacity of an
+                        investor as prescribed by this Agreement.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>User's Bank Account</strong></td>
+                    <td>
+                        an account opened in the name of the Investor in a credit institution,
+                        payment institution or electronic money institution, subject to the
+                        European Union laws concerning the prevention of money laundering
+                        and terrorism financing.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>User's Profile</strong></td>
+                    <td>
+                        the User’s personal site on the Platform, which is automatically created
+                        after the Investor registers on the Platform which does not allow
+                        entering into Assignment Agreements before Afranga has conducted
+                        KYC checks of the User.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Work Day or Business Day</strong></td>
+                    <td>
+                        a day, on which banks in Bulgaria and France are operating, except
+                        weekends and public holidays.
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <p><strong>2. Subject and scope of the Assignment Agreement</strong></p>
+
+            <p><strong>Purpose of the current Agreement:</strong></p>
+            <ul>
+                <li>Afranga operates an online claim marketplace Platform allowing the electronic assignment of
+                    claims via which the Claim specified below shall be assigned.</li>
+                <li>The Loan Originator is a licensed/ registered lender, who is an owner of a Claim against a
+                    Borrower.</li>
+                <li>The User wishes to purchase Claim(s) from the Loan originators listed on Afranga’s Platform.</li>
+            </ul>
+
+            <p><strong>The parties understand and agree that:</strong></p>
+
+            <p><strong>2.1</strong>. This Assignment Agreement shall be concluded between the Assignee (the User), the Assignor
+                (Loan Originator) and Afranga who operates the Platform facilitating the transactions.</p>
+            <p><strong>2.2</strong>. According to the provisions of the current Assignment agreement, the Loan Originator agrees to
+                assign to the User (in his capacity of Assignee) the Claim (or part of a Claim) against the Borrower
+                arising from the Loan Agreement in exchange for a Claim Price.</p>
+            <p><strong>2.3</strong>. The User (Assignee) confirms and understands that the Claims purchased on Afranga’s Platform
+                from the Loan Originator are not all of the Loan Originator’s claims against the Borrower, and the User
+                shall not become the sole creditor of the Borrower.</p>
+            <p><strong>2.4</strong>. The User confirms and understands that Afranga and the Loan Originator shall manage the Claim
+                together with the claims of other Users against the respective Borrower.</p>
+
+            <br>
+            <p><strong>3. Conclusion of the Assignment Agreement</strong></p>
+            <p><strong>3.1</strong>. The User (Assignee) confirms that he is familiar with the terms of the current Agreement as well as
+                with the terms of the Afranga User Agreement, General Terms and Conditions and understands and
+                accepts the rights and obligations arising from the two documents.</p>
+            <p><strong>3.2</strong>. The User (Assignee) confirms that he wishes to enter into the current Assignment Agreement.</p>
+            <p><strong>3.3</strong>. The Claim will be transferred from the Loan originator and assigned to the User (Assignee) at the
+                time when the Claim price is fully paid by the User.</p>
+            <p><strong>3.4. </strong>The User (Assignee) declares that at the time of conclusion of the current Agreement, he is
+                compliant with the prerequisites under Article 2.2 of the <i>Afranga User Agreement, General Terms and
+                    Conditions</i>.</p>
+
+            <br>
+            <p><strong>4. Claim price</strong></p>
+            <p><strong>4.1. </strong> The User (Assignee) is obligated to pay the Loan Originator the Claim Price indicated in the current
+                Assignment Agreement.</p>
+            <p><strong>4.2. </strong> The price shall be paid by transferring the monetary equivalent of the Claim price from the funds
+                available on the User’s Afranga Account to the Loan Originator’s account.</p>
+            <p><strong>4.3. </strong> Once the Claim is considered transferred, Afranga will make sure to facilitate the transfer of funds
+                from the User’s Afranga Account to the Loan Originator’s account.</p>
+
+            <br>
+            <p>5. General rights and obligations of Afranga</p>
+            <p><strong>5.1. </strong> The parties hereby agree that:</p>
+            <p>5.1.1. The Claim will be transferred according to the provisions of the current Assignment Agreement
+                as well as the Afranga User Agreement, General Terms and Conditions.</p>
+            <p>5.1.2. Afranga will have the claim management rights as per the current Assignment Agreement and
+                the Afranga User Agreement, General Terms and Conditions.</p>
+            <p><strong>5.2. </strong> Afranga shall act on behalf of the User (Assignee) by:</p>
+            <p>5.2.1. Providing the User (Assignee) with the necessary documentation to enter into a Loan Assignment
+                Agreement as well as to transfer the Claim.</p>
+            <p>5.2.2. Providing the User (Assignee) with the option to sell his Claim(s) to the Loan Originator or a
+                third
+                party authorized on the Afranga Platform.</p>
+            <p>5.2.3. Providing the User (Assignee) with the Afranga Auto Invest - functionality - an option, but not an
+                obligation for the User to enter into purchases and/ or sales of Claims via automated purchases and/ or
+                sales.</p>
+            <p>5.2.4. Providing the User (Assignee) with a translation of a sample loan agreement based on which the
+                Loan Agreement is concluded.</p>
+            <p>5.2.5. Facilitating the loan repayment, interest, contractual penalties and/or interests as well as any
+                other ancillary payments arising from the Loan Agreement.</p>
+            <p>5.2.6. Facilitating the buyback obligations of the Loan Originator, in case they are exercised.</p>
+            <p>5.2.7. Facilitating the transfer of the buyback price to the Assignee.</p>
+            <p>5.2.8. Collecting late payments in the interests of the User (Assignee) by the Loan originator and/ or
+                Borrower in case the Loan Originator and/ or the Borrower fails to pay any amounts on their due
+                date.</p>
+            <p>5.2.9. Establishing any collateral securing performance of the Loan Originator’s obligations arising from
+                this Agreement.</p>
+            <p>5.2.10. Enforcing any security created for the benefit of the Assignee and handle all matters related to
+                the performance of out-of-court actions for collection of claims and enforcement of security in the name
+                of the Assignee and for the benefit of the Assignee.</p>
+            <p>5.2.11. Drafting amendments or signing additional annex agreements to collateral documents without
+                a prior coordination with the Assignee.</p>
+            <p>5.2.12. Distributing among all the Creditors, who at the moment of receipt of funds have an effective
+                claim against the Borrower arising out of the Loan Agreement, the funds received from the Loan
+                originator or the Borrower for settling obligations under the Loan Agreement.</p>
+            <p><strong>5.3. </strong> Afranga shall act on behalf of the Loan originator by:</p>
+            <p>5.3.1. Providing the Loan originator with the necessary documentation to transfer Claims, arising from
+                a Loan Assignment Agreement as well as buyback of such Claims.</p>
+            <p>5.3.2. Servicing payments made by the Loan Originator in line with the provisions of the Loan
+                Agreement and facilitating the transfer of all the payments received to the User (Assignee).</p>
+            <p><strong>5.4. </strong> Afranga shall perform the actions it finds necessary and feasible to facilitate the timely and full
+                recovery of payments from the Loan Originator or other party servicing the Claim without engaging the
+                Assignee (User) with respect to the particular Claim.</p>
+
+            <br>
+            <p><strong>6. The Loan originator’s warranties</strong></>
+            <p><strong>6.1. </strong> The Loan originator undertakes to:</p>
+            <p>6.1.1. Act with the utmost care and in a way ensuring the representation and protection of the Assignee’s
+                interests.</p>
+            <p>6.1.2. Perform all reasonable actions to ensure that the Assignee’s Claim is free of any third-party
+                claims.</p>
+            <p>6.1.3. Notify Afranga and the Assignee of any circumstances and developments, which affect or
+                could
+                affect the performance of the current Assignment Agreement.</p>
+            <p>6.1.4. Resolve issues related to the repayment of the Loan and fulfilment of the Loan Agreement in the
+                interests of the User (Assignee).</p>
+            <p>6.1.5. Manage the funds received by the User separate from their own property.</p>
+            <p>6.1.6. Unilaterally exercise his buyback obligations in case the Borrower delays the payments arising
+                from the Loan Agreement by more than 61 (sixty-one) days.</p>
+            <p>6.1.7. In case the buyback obligations are exercised, facilitate the transfer of funds to Afranga and
+                respectively – to the User (Assignee).</p>
+
+            <br>
+            <p><strong>7. Rights and obligations of the Loan originator</strong></p>
+            <p><strong>7.1. </strong> Once the Claim has been transferred from the Loan Originator (Assignor) to the User (Assignee),
+                the User shall irrevocably authorize the Loan Originator to manage the Claim in the interests of the
+                User
+                but in its own name.</p>
+            <p><strong>7.2. </strong> The Loan originator acting in the interests of the User (Assignee) can:</p>
+            <p>7.2.1. Amend the main Loan Agreement and/or enter in supplemental agreements to it without prior
+                notification to the User (Assignee), including, without prior coordination with the User, at their
+                discretion,
+                to make amendments and additions to the Loan Agreement.</p>
+            <p>7.2.2. Manage the Claim until it is fully repaid, including together with Afranga.</p>
+            <p>7.2.3. Take all actions required relating to the repayment of the Loan and fulfilment of the Loan
+                Agreement until the Loan is repaid in full and the Claim is discharged in full.</p>
+            <p>7.2.4. The Assignee agrees and understands that the mentioned authorization in relation to the Loan
+                originator shall be valid throughout the duration of the Assignment Agreement and the actions of the
+                Loan originator are binding on the Assignee.</p>
+            <p>7.2.5. The Assignee authorizes the Loan originator to continue to service the Claim after its transfer.
+                The Parties thus agree and approve that they shall not inform the Borrower of the conclusion of the
+                current Assignment Agreement.</p>
+            <p>7.2.6. The Parties hereby agree that until the Claim is discharged in full, the Assignee will not revoke
+                the authorization granted to the Lender to manage the Claim and Service the Claim.</p>
+            <p>7.2.7. The User (Assignee) understands and accepts that during the validity of this Agreement, the Loan
+                Originator is entitled to introduce modifications or enter into additional agreements to the Loan
+                Agreement without obtaining prior approval of the User (Assignee) but only in case such modifications
+                will not result in any changes of the payments from the Borrower arising from the Loan Agreement or
+                extension/postponement of the due dates, except in cases of changes of monthly payment date initiated
+                by the Borrower.</p>
+            <p>7.2.8. In case any new laws or regulations are passed, or existing ones are changed after the conclusion
+                of the Agreement, or government authorities have passed resolutions according to which the Loan
+                Originator has an obligation to implement amendments to the Loan Agreement resulting in any
+                adjustments of the payments from the Borrower arising from the Loan Agreement or
+                extension/postponement of the due dates, the Assignee accepts that such changes can be made by
+                the Loan Originator without the User's prior approval.</p>
+            <p>7.2.9. The Loan Originator reserves the right to calculate a contractual penalty according to the Loan
+                Agreement if the Borrower delays the repayment.</p>
+            <p>7.2.10. The Assignee will not revoke the authorization to the Loan Originator during the period of
+                performance of the Agreement.</p>
+
+            <br>
+            <p><strong>8. Borrower’s payments</strong></p>
+            <p><strong>8.1. </strong> The Borrower shall make the Borrower’s Payments to the Loan Originator pursuant to the Loan
+                Agreement and the schedule to the Loan Agreement.</p>
+            <p><strong>8.2. </strong> The Loan Originator shall immediately transfer all received Borrower’s Payments to Afranga.</p>
+            <p><strong>8.3. </strong> After receiving the Borrower’s Payments, including the case where the Borrower makes an early
+                repayment, fully or partially and the case where the Borrower performs only a partial payment of his
+                obligations, the Loan Originator shall immediately transfer them to Afranga.</p>
+            <p><strong>8.4. </strong> After Afranga has received the relevant share of the Borrower’s Payments, Afranga shall
+                proportionally as per participation distribute the payments among all creditors having claims arising
+                from
+                the Loan Agreement against the Borrower.</p>
+            <p><strong>8.5. </strong> Afranga is entitled before facilitating the distribution of the funds received from the Loan
+                Originator
+                (Assignor) to the User (Assignee) to deduct therefrom Claim service fee and other fees due according
+                to its Price List.</p>
+            <p><strong>8.6. </strong> The Assignee undertakes not to bring any claims against the Loan Originator, Afranga or the
+                Borrower concerning full or partial early repayment of Loan based on the lost profit and any other
+                losses.</p>
+
+            <br>
+            <p><strong>9. Buyback of the Claim</strong></p>
+            <p><strong>9.1. </strong> The Loan originator shall be obliged to unilaterally exercise its buyback obligations if the
+                Borrower
+                delays the payments arising from the Loan Agreement by more than 60 (sixty) days.</p>
+            <p><strong>9.2. </strong> The Loan originator hereby authorizes Afranga, in case if the Loan originator’s obligation to
+                exercise
+                its buyback obligations have occurred, to write off from the Loan Originator’s account and transfer the
+                sums equivalent to the buyback price to the account of the Assignee immediately, without obtaining
+                prior separate order from the Loan originator.</p>
+            <p><strong>9.3. </strong> The Claim shall be considered as transferred back to the Loan originator from the moment of the
+                payment of the sums equivalent to the buyback price in the Afranga Account of the Assignee.</p>
+            <p><strong>9.4. </strong> The Assignee shall not make any complaints or claims against the Loan originator in respect of the
+                exercise of the buyback obligations due to lost profit and any other damages in this respect.</p>
+            <p><strong>9.5. </strong> In case the Loan Originator exercises the buyback obligations, the buyback price of the Claim paid
+                by the Loan originator to the Assignee for the buyback is equal to the total amount of the remaining
+                principal amount of the Claim the Assignee holds and accumulated and outstanding Interest of the
+                Claim the Assignee holds specified in Afranga’s platform in euros (EUR) as at the time of exercising the
+                buyback obligations.</p>
+            <p><strong>9.6. </strong> The buyback price under this section forms a full and final payment to the Assignee for the re-
+                transfer of the Claim.</p>
+
+            <br>
+            <p><strong>10. Default of the Borrower</strong></p>
+            <p><strong>10.1. </strong> The Loan Originator and Afranga shall not be responsible for the default of the Borrower or the
+                Borrower’s late payments. The User (Assignee) understands and accepts the default risk of the
+                Borrower as the result of which the User (Assignee) may fail to recover the Claim in full amount. In the
+                event of the Borrower’s default the Loan Originator and Afranga shall not assume responsibility for the
+                security of the Claim.</p>
+            <p><strong>10.2. </strong> The Assignee by confirming to the Agreement authorizes the Loan originator to handle in the
+                event of non-performance of the Borrower’s obligations arising from the Loan Agreement all matters
+                related to the restructuring of the Claim, termination of the Loan Agreement, execution of a new loan
+                agreement, performance of out-of-court actions for collection of claims and any other actions in the
+                interests of the Assignee (principal) related to the recovery of the Claim.</p>
+            <p><strong>10.3. </strong> The Loan originator shall have full discretion to choose which action to take in case of the
+                default
+                of the Borrower, however, the Loan originator undertakes to act in the interests of the User (Assignee)
+                with due care.</p>
+            <p><strong>10.4. </strong> If requested by the Loan originator, the User (Assignee) shall issue the Loan originator an
+                additional proxy to carry out the Loan originator’s rights under this Section.</p>
+            <p>10.5.The Loan originator shall perform all necessary and allowed actions to facilitate timely and full
+                recovery of the Claim without an involvement of the User (Assignee).</p>
+            <p><strong>10.6. </strong> The User (Assignee) understands and acknowledges that Afranga is entitled to receive a
+                compensation of reasonable expenses incurred when acting as an authorized representative of the
+                Users (Assignees) in the event of a Borrower default and agrees to therefore compensate Afranga for
+                such costs.</p>
+            <p><strong>10.7. </strong> Afranga can transfer of the management of the Claim to a third party, third party has the right to
+                act, usingits employees and authorized representatives.</p>
+            <p><strong>10.8. </strong> The Assignee authorizes Afranga to submit notifications to the Borrower on the assignment of the
+                Claim.</p>
+
+            <br>
+            <p><strong>11. Default of the Loan originator</strong></p>
+            <p><strong>11.1. </strong> In case of insolvency of the Loan Originator or default by the Loan Originator according to the
+                cooperation agreement made by and among the Loan Originator and Afranga, the User (Assignee)
+                irrevocably authorizes Afranga at its sole discretion to inform the Borrower on the assignment of the
+                Claim on behalf of the Assignee and demand the Borrower to continue to make all payments arising
+                from the Claim to Afranga.</p>
+            <p><strong>11.2. </strong> The User (Assignee) understands and acknowledges that Afranga is entitled to receive a
+                compensation of reasonable expenses incurred when acting as an authorized representative of the
+                Users (Assignees) in the event of a Loan originator default and agrees to therefore compensate Afranga
+                for such costs.</p>
+            <p><strong>11.3. </strong> Afranga can transfer of the management of the Claim to a third party, which has the right to act,
+                using its employees and authorized representatives.</p>
+            <p><strong>11.4. </strong> The Assignee authorizes Afranga to submit notifications to the Loan originator on the assignment
+                of the Claim.</p>
+
+            <br>
+            <p><strong>12. Termination</strong></p>
+            <p><strong>12.1. </strong> Afranga is entitled to terminate the Assignment Agreement in case:</p>
+            <p>12.1.1. The User (Assignee) breaches the current Assignment Agreement.</p>
+            <p>12.1.2. The User (Assignee) illicitly uses the Platform.</p>
+            <p>12.1.3. Afranga finds the User (Assignee) has provided false or misleading information or counterfeit
+                documents or Afranga has suspicions on the identity of the User and Afranga has not been able to
+                contact the Assignee to confirm the nature of a transaction.</p>
+            <p>12.1.4. The User (Assignee) has not provided Afranga with information required as per their customer
+                identification, due diligence and KYC policies.</p>
+            <p>12.1.5. The User (Assignee) has not provided Afranga with information required by law or by
+                regulators.</p>
+            <p>12.1.6. Afranga suspects involvement in money laundering, terrorism financing, or an attempt to do
+                so, with the involvement of the User (Assignee) or the User’s Profile, or if the Afranga finds that the
+                User is a person who is subject to international or national sanctions or is an affiliate of such
+                person.</p>
+            <p><strong>12.2. </strong> Afranga also reserves the right to terminate the current Assignment Agreement by notifying the
+                Assignee at least 10 (ten) days in advance, to limit the functionalities of the User’s Afranga Profile
+                or
+                unilaterally terminate the present Assignment Agreement, use the buyback rights, and deny access to
+                the User’s Afranga Profile in any other cases.</p>
+
+            <br>
+            <p><strong>13. Other terms and conditions</strong></p>
+            <p><strong>13.1. </strong> The current Assignment Agreement is drafted in electronic form and is valid without the physical
+                signature of the parties.</p>
+            <p><strong>13.2. </strong> The current Assignment Agreement is drafted in English.</p>
+            <p><strong>13.3. </strong> The current Assignment Agreement shall be sent to the User‘s Afranga profile after the time of
+                conclusion.</p>
+            <p><strong>13.4. </strong> The current Assignment Agreement remains valid until the full execution and performance
+                of the
+                obligations set in it.</p>
+            <p><strong>13.5. </strong> The current Assignment Agreement is subject to the applicable laws and regulations in the
+                Republic of Bulgaria.</p>
+            <p><strong>13.6. </strong> The invalidity of any part of this Agreement does not affect the validity of other provisions or
+                the
+                entire Agreement.</p>
+            <p><strong>13.7. </strong> Any disputes between the parties in relation to the current Assignment Agreement shall be
+                resolved at the Sofia District Court or another competent court pursuant to the effective laws of the
+                Republic of Bulgaria.</p>
+
+        </div>
+</body>
+</html>

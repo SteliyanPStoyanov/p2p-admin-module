@@ -1,0 +1,17 @@
+/exports
+/documents
+/avatars
+/personal-doc
+/company-doc
+/settlement
+/loans_outstanding
+/wallet
+/bonus_tracking
+/strategies_balance
+/blog-page-images/*
+/blog-page-images
+/pond-upload
+/company-doc
+/logs
+/pond-upload
+!.gitignore

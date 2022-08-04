@@ -1,0 +1,103 @@
+.rotate {
+    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.rotate.down {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90 def);
+}
+
+.ui-state-active .fas {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90 def);
+}
+
+#myTabContent .card {
+    border: none;
+    box-shadow: none;
+    margin-bottom: 10px;
+}
+
+#myTabContent .card > .card-header {
+    background: none;
+    border: none;
+    padding: 1rem 1rem 0 1rem !important;
+}
+
+#myTabContent .card > .card-header .btn-link {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+#myTabContent .card > .card-header .btn-link[aria-expanded="false"] {
+    color: rgba(0, 0, 0, .4);
+}
+
+#myTab .nav-link {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+}
+
+#myTab .nav-link.active {
+    font-weight: 600;
+}
+
+#myTabContent .card-body {
+    font-size: 0.9em;
+    padding: 1rem;
+}
+
+#myTabContent .card-body .card-text {
+    margin-bottom: .75rem !important;
+}
+
+#myTabContent .card-body .card-title-main {
+    width: 8vw;
+    display: inline-block;
+}
+
+#myTabContent .card-body .card-content {
+    display: inline-block;
+    padding-left: 1vw;
+}
+
+#myTabContent .loan-details-admin .card-body .card-title-main {
+    width: 25%;
+    min-width: 200px;
+}
+
+#PaymentScheduleAdmin .mobile-table-title {
+    display: none;
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+
+    .loan-details-admin .ld-col-1 {
+        flex: 0 0 40% !important;
+        max-width: 40% !important;
+    }
+
+    .loan-details-admin .ld-col-2 {
+        flex: 0 0 60% !important;
+        max-width: 60% !important;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1300px) {
+
+    .loan-details-admin .ld-col-1 {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+
+    .loan-details-admin .ld-col-2 {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+}

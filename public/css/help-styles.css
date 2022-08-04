@@ -1,0 +1,116 @@
+/* HELP PAGE */
+
+#help-container {
+    padding-bottom: 0;
+    padding-top: 5rem;
+}
+
+#help-container .ui.three.column.stackable.left.aligned.grid.container, #help-container .ui.vertical.segment.stackable.left.aligned.grid.container {
+    margin-bottom: 3rem;
+    width: 100% !important;
+    max-width: 1200px !important;
+}
+
+#help-container .ui.three.column.stackable.left.aligned.grid.container h1 {
+    margin: .75rem 0 3rem 0 !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    padding: 0 !important;
+}
+
+#help-container .ui.three.column.stackable.left.aligned.grid.container p {
+    padding-left: 0 !important;
+}
+
+#help-container h3 {
+    color: #595959;
+    display: block;
+    width: 100%;
+}
+
+#help-container .help-text {
+    margin-bottom: 0rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #595959 !important;
+}
+
+#help-container .accordion {
+    width: 100%;
+    box-shadow: none;
+}
+
+#help-container .ui.attached.tabular.menu {
+    padding: 0;
+}
+
+#help-container .bottom {
+    border: none;
+}
+
+#help-container .ui.styled.accordion .title {
+    border-top: none !important;
+    padding-left: 0;
+}
+
+#help-container .ui.table thead th {
+    background: #fff !important;
+    font-weight: normal;
+}
+
+#help-container .ui.tabular.menu .active.item {
+    font-weight: 600;
+}
+
+#help-container .ui.styled.accordion .accordion .title, .ui.styled.accordion .title {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #000000;
+    font-family: 'Nunito Sans', Sans-serif, serif !important;
+}
+
+#help-container .ui.accordion .content {
+    font-family: 'Nunito Sans', Sans-serif, serif !important;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.pusher #help-container.features-container p {
+    color: #000000;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.97px) {
+
+    #help-container .ui.three.column.stackable.left.aligned.grid.container, #help-container .ui.vertical.segment.stackable.left.aligned.grid.container {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+}
+
+/* HELP PAGE MOBILE */
+
+@media only screen and (max-width: 767.98px) {
+    #help-container .ui.tabular .item {
+        border: none;
+        width: 23%;
+        font-size: 0.9rem;
+        text-align: center;
+        display: flex;
+    }
+
+    #help-container .ui.tabular .active {
+        padding: .92857143em 1.42857143em;
+        display: flex;
+        background: 0 0;
+    }
+
+    #help-container .ui.stackable.grid {
+        margin-left: 1em !important;
+        margin-right: 1em !important;
+    }
+
+    #help-container .grid.container {
+        padding-right: 2rem;
+        padding-keft: .25rem;
+    }
+}

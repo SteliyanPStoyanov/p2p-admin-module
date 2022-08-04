@@ -1,0 +1,235 @@
+.auto-invest #myTabContent .card .card-header .btn-link,
+.auto-invest #myTabContent .card .card-header {
+    padding-left: 0px !important;
+    color: #009c95;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: none;
+}
+
+.auto-invest #myTabContent .card .card-header .btn-link .rotate.down {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.form-input-h40 {
+    height: 50px;
+}
+
+.auto-invest-crud .fa.fa-info-circle {
+    color: gray;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.loan_payment_status .glyphicon.glyphicon-ok:first-child {
+    display: none !important;
+}
+
+.auto-invest-crud .bootstrap-select.show-tick .dropdown-menu .selected span.check-mark {
+    position: relative;
+    display: inline-block;
+    right: 0px;
+    top: 0;
+}
+
+.sorting-auto-invest i {
+    cursor: pointer;
+    color: #4183c4;
+}
+
+.sorting-auto-invest .fa.fa-sort-asc,
+.sorting-auto-invest .fa.fa-sort-desc {
+    float: left;
+}
+
+.sorting-auto-invest .fa.fa-sort-asc {
+    margin-left: 20px;
+    margin-top: 7px;
+}
+
+.sorting-auto-invest .fa.fa-sort-desc {
+    margin-left: 7px;
+    margin-top: 0px;
+}
+
+.tooltip-success-form {
+    font-family: 'Nunito Sans' !important;
+    width: 330px;
+    bottom: 27px;
+    left: 50%;
+    margin-left: -101px;
+}
+
+.tooltip-error-form {
+    font-family: 'Nunito Sans' !important;
+    width: 180px;
+    bottom: 27px;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.btn-reset:hover {
+    text-decoration: none;
+}
+
+.tooltip-inner {
+    text-align: left;
+}
+
+.blue-color {
+    color: #0070C0 !important
+}
+
+#investsTable td.center.aligned {
+    white-space: normal;
+}
+
+#investTable.ui.table th.action-btn {
+    width: 1%;
+}
+
+#investTable.ui.table thead th, #investsTable td.center.aligned {
+    padding: .5rem;
+}
+
+#investsTable tr {
+    min-height: 53px;
+    max-height: 53px;
+    height: 53px;
+}
+
+#investTable.ui.table thead tr th {
+    padding-bottom: 1rem;
+    vertical-align: bottom;
+}
+
+.ui.table tr td {
+    border-bottom: 1px solid rgba(34, 36, 38, .1);
+    border-top: none !important;
+}
+
+.ui.table thead th {
+    color: #595959 !important;
+    background-color: transparent !important;
+    font-weight: 400 !important;
+    border-top: none !important;
+}
+
+#pagination-nav td {
+    padding-top: 2rem;
+}
+
+#autoinvest-strategy .card.shadow-sm {
+    border: 1px solid rgb(0 0 0 / 0.05);
+}
+
+.auto-invest-crud i.long.arrow{
+    padding-top: .1rem;
+}
+@media only screen and (max-width: 767.98px) {
+
+    #investsTable tr {
+        min-height: auto;
+        max-height: auto;
+    }
+
+    #autoinvest-strategy h2.mt-5.mb-5.text-black {
+        margin: 1rem 0 !important;
+        padding-left: .25rem !important;
+    }
+
+    #autoinvest-strategy .card.shadow-sm {
+        padding: 1rem;
+    }
+
+    #autoinvest-strategy .card.shadow-sm .card-body {
+        padding: .3rem;
+    }
+
+    #autoinvest-strategy #myTabContent {
+        padding: .3rem !important;
+    }
+
+    #autoinvest-strategy .center.aligned.pl-3.pr-3 {
+        padding: 0 .3rem .5rem .3rem !important;
+    }
+
+    #autoinvest-strategy .mobile-table-content.row {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto !important;
+        width: 50% !important;
+    }
+
+    #autoinvest-strategy .mobile-table-content.row .col {
+        min-width: 10vw;
+        max-width: 17vw;
+    }
+
+    #autoinvest-strategy #investsTable tr td:last-of-type {
+        padding-right: 0.3rem !important;
+        margin-right: 0 !important;
+        vertical-align: top;
+        padding-top: 1rem !important;
+    }
+
+    #autoinvest-strategy #investsTable {
+        margin-top: 0 !important;
+    }
+
+    #autoinvest-strategy #investsTable .reorder-item-list {
+        margin-bottom: 2rem;
+    }
+
+    .ui.table:not(.unstackable) tr > td {
+        display: flex !important;
+    }
+
+    .mobile-table-title {
+        width: 50% !important;
+        vertical-align: top;
+    }
+
+    .mobile-table-content {
+        width: 49% !important;
+        margin-left: auto;
+    }
+
+    #investsTable td.center.aligned {
+        white-space: normal;
+    }
+
+    #investsTable tr {
+        height: auto;
+    }
+
+    #investsTable tr td {
+        border-bottom: 1px solid rgb(0 0 0 / 0.05) !important;
+    }
+
+    #investsTable tr td:last-of-type {
+        border-bottom: none !important;
+    }
+
+    #investsTable tr td .mobile-table-title {
+        margin: auto 0;
+    }
+
+    #formContent .col-lg-4.ml-5.trans-details{
+        margin-left: 0!important;
+    }
+
+    #investsTable tr{
+        max-height: none;
+    }
+}
+
+@media only screen and (max-width: 517.98px) {
+    #autoinvest-strategy .mobile-table-content.row {
+        width: 100% !important;
+    }
+}
